@@ -1,7 +1,5 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-image: url('background.jpg');
+      background-image: url('background.jpg'); /* βάλε εδώ το όνομα της εικόνας */
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
@@ -22,7 +20,7 @@
     header {
       padding: 2rem;
       text-align: center;
-      background-color: rgba(31, 31, 31, 0.85);
+      background-color: rgba(31, 31, 31, 0.85); /* ημιδιαφανές για να φαίνεται πάνω από το bg */
       border-bottom: 1px solid #333;
     }
     header h1 {
@@ -34,11 +32,24 @@
       font-size: 1rem;
       color: #bbb;
     }
+    .cv-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #bb86fc;
+      color: #121212;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .cv-button:hover {
+      background-color: #9e6bf0;
+    }
     section {
       max-width: 900px;
       margin: 2rem auto;
       padding: 2rem;
-      background-color: rgba(18, 18, 18, 0.85);
+      background-color: rgba(18, 18, 18, 0.85); /* σκοτεινό ημιδιαφανές "glass" background */
       border-radius: 10px;
       box-shadow: 0 0 20px rgba(0,0,0,0.3);
     }
@@ -73,7 +84,7 @@
 <body style="padding-top: 80px;">
 
 <nav style="position: fixed; top: 0; width: 100%; background-color: rgba(18,18,18,0.95); padding: 1rem 0; text-align: center; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.5);">
-  <a href="index (about).html" style="margin: 0 1rem; color: #bb86fc;">About</a>
+  <a href="index.html" style="margin: 0 1rem; color: #bb86fc;">About</a>
   <a href="education.html" style="margin: 0 1rem; color: #bb86fc;">Education</a>
   <a href="experience.html" style="margin: 0 1rem; color: #bb86fc;">Experience</a>
   <a href="publications.html" style="margin: 0 1rem; color: #bb86fc;">Publications</a>
@@ -81,36 +92,18 @@
   <a href="contact.html" style="margin: 0 1rem; color: #bb86fc;">Contact</a>
 </nav>
 
-
-<header>
-  <h1>Nikolaos Oikonomou, Computer Engineer</h1>
-  <h1>PhD(c), MSc, BEng</h1>
-  <p>Computer Science Tutor & Researcher</p>
-</header>
-
-<section>
-
-<h2>📌 About Me</h2>
-<p>
- A long-standing interest in computers and programming gradually developed into a deep engagement with research in the fields of Computer Engineering and Informatics. What started as a personal curiosity—tinkering with hardware, writing small programs, learning how systems communicate—has grown into a structured academic path with a focus on real-world impact.
-</p>
-<p>
-Currently a PhD candidate at the Department of Informatics & Telecommunications, University of Ioannina, with both Bachelor and Master degrees completed in the same department. Research interests lie at the intersection of systems design, cybersecurity, and intelligent computing, with a strong motivation to explore how emerging technologies can serve both users and society.
-</p>
-<p>
- Alongside research, there is active involvement in tutoring Computer Science and Mathematics, and several years of professional experience as a Computer Engineer and IT consultant. These roles provide a valuable bridge between theory and practice, and offer continuous opportunities for collaboration and learning.
-</p>
-<p>
- Outside academia, participating in local cycling groups around Ioannina helps maintain a sense of balance and connection with the city and its rhythm.
-</p>
-<div style="margin-top: 2rem;">
-  <h3 style="color: #bb86fc;">📄 View CV Online</h3>
-  <iframe src="cv.pdf" width="100%" height="600px" style="border: 1px solid #333; border-radius: 10px;"></iframe>
-</div>
-
+<section style="max-width: 900px; margin: 2rem auto; padding: 2rem; background-color: rgba(18, 18, 18, 0.85); border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.3);">
+<h2>🔗 Contact</h2>
+    <ul>
+      <li><a href="mailto:ni.oikonomou@uoi.gr">📧 Email</a></li>
+      <li><a href="https://github.com/Haikoss" target="_blank">💻 GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/nikolaos-oikonomou-b38575264/" target="_blank">🔗 Linkedin</a></li>
+    </ul>
+  
 </section>
-<footer>
+<footer style="text-align: center; padding: 1rem; font-size: 0.9rem; color: #888; border-top: 1px solid #333; margin-top: 3rem; background-color: rgba(31, 31, 31, 0.8);">
   © 2025 Nikolaos Oikonomou. All rights reserved. Published with GitHub Pages.
 </footer>
 </body>
+
 </html>
